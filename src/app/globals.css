@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* グレー地にビビッドな赤の水玉（body.polka-vivid） */
+@layer base {
+  body.polka-vivid {
+    @apply min-h-screen bg-gray-200 text-gray-800 antialiased;
+    background-image: radial-gradient(
+      circle at center,
+      #ff0033 2.25px,
+      transparent 2.35px
+    );
+    background-size: 26px 26px;
+    background-position: 0 0;
+  }
+}
+
+@layer utilities {
+  /* セクション見出しの下線が伸びる演出 */
+  .heading-accent {
+    @apply relative inline-block pb-1;
+  }
+  .heading-accent::after {
+    content: "";
+    @apply absolute bottom-0 left-0 h-0.5 w-0 rounded-full bg-blue-500/90 transition-[width] duration-500 ease-out;
+  }
+  .group:hover .heading-accent::after,
+  .heading-accent:focus-visible::after {
+    @apply w-full;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heading-accent::after {
+    @apply w-full transition-none;
+  }
+}

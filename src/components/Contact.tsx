@@ -2,8 +2,8 @@ import { contact } from "../../data/portfolio";
 
 export const Contact = () => {
   return (
-    <section>
-      <h2 className="mb-6 text-xl font-bold">Contact</h2>
+    <section className="group">
+      <h2 className="heading-accent mb-6 text-xl font-bold">Contact</h2>
       <ul className="space-y-2 text-gray-700">
         {contact.github && (
           <li>
@@ -12,7 +12,7 @@ export const Contact = () => {
               href={contact.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 underline hover:text-blue-800"
+              className="text-blue-600 underline decoration-blue-400/50 underline-offset-2 transition-[color,text-decoration-color] duration-200 hover:text-blue-800 hover:decoration-blue-600"
             >
               {contact.github}
             </a>
@@ -23,7 +23,7 @@ export const Contact = () => {
             <span className="font-medium">Email: </span>
             <a
               href={`mailto:${contact.email}`}
-              className="text-blue-600 underline hover:text-blue-800"
+              className="text-blue-600 underline decoration-blue-400/50 underline-offset-2 transition-[color,text-decoration-color] duration-200 hover:text-blue-800 hover:decoration-blue-600"
             >
               {contact.email}
             </a>

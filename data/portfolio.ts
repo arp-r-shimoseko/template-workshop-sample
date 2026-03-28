@@ -4,21 +4,21 @@ export const profile = {
   name: '下世古颯哉',
   role: 'webエンジニア',
   bio: '自己紹介文をここに書いてください。経歴や興味のある分野など、自由に書きましょう。',
-  avatarUrl: '/images/avatar.jpg', // public/images/ に画像を置いてパスを指定
+  avatarUrl: '/images/IMG_3852.jpg', // public/images/ に画像を置いてパスを指定
 };
 
 export const skills = [
-  { name: 'JavaScript', level: '学習中' },
-  { name: 'React', level: '学習中' },
-  { name: 'TypeScript', level: '学習中' },
-  { name: 'Next.js', level: '学習中' },
+  { name: 'JavaScript', level: '3年' },
+  { name: 'React', level: '3年' },
+  { name: 'TypeScript', level: '3年' },
+  { name: 'Next.js', level: '3年' },
   // 追加・削除してOK
 ];
 
 export const projects = [
   {
-    title: 'プロジェクト名',
-    description: 'どんなものを作ったか、簡単な説明を書いてください。',
+    title: 'じこしょーかい',
+    description: 'きままに作ってみた。',
     techStack: ['Next.js', 'TypeScript'],
     url: 'https://github.com/あなたのユーザー名/リポジトリ名',
   },
