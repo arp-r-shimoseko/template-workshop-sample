@@ -1,8 +1,8 @@
 // ★ ポートフォリオの内容をここに編集してください
 
 export const profile = {
-  name: "あなたの名前",
-  role: "あなたの肩書き（例：Webエンジニア）",
+  name: "sekiguchi",
+  role: "webエンジニア",
   bio: "自己紹介文をここに書いてください。経歴や興味のある分野など、自由に書きましょう。",
   avatarUrl: "/images/avatar.jpg", // public/images/ に画像を置いてパスを指定
 };
