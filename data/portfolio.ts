@@ -3,7 +3,7 @@
 export const profile = {
   name: '下世古颯哉',
   role: 'webエンジニア',
-  bio: '自己紹介文をここに書いてください。経歴や興味のある分野など、自由に書きましょう。',
+  bio: '見た目は大人！、頭脳はこども！、名探偵しもせこ！',
   avatarUrl: '/images/IMG_3852.jpg', // public/images/ に画像を置いてパスを指定
 };
 
